@@ -1,0 +1,20 @@
+{
+  "name": "resident_frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Resident Directory Management System - Frontend (React + Vite)",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000 --strictPort"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.3"
+  }
+}
