@@ -1,0 +1,213 @@
+.card {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 0 rgba(2, 6, 23, 0.03);
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.btn_sm {
+  padding: 8px 10px;
+  border-radius: 11px;
+  font-size: 13px;
+}
+
+.btn_md {
+  font-size: 14px;
+}
+
+.btn_primary {
+  color: white;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 1), rgba(6, 182, 212, 0.85));
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.18);
+}
+
+.btn_primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(59, 130, 246, 0.22);
+}
+
+.btn_secondary {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: var(--border);
+}
+
+.btn_secondary:hover {
+  background: rgba(2, 6, 23, 0.03);
+}
+
+.btn_danger {
+  color: white;
+  background: rgba(239, 68, 68, 1);
+  box-shadow: 0 10px 18px rgba(239, 68, 68, 0.18);
+}
+
+.btn_danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(239, 68, 68, 0.22);
+}
+
+.btn_ghost {
+  color: var(--text);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.btn_ghost:hover {
+  background: rgba(2, 6, 23, 0.03);
+}
+
+.btn_disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 13px;
+  color: rgba(17, 24, 39, 0.9);
+  font-weight: 650;
+}
+
+.input {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.input:focus {
+  border-color: rgba(59, 130, 246, 0.55);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.14);
+}
+
+.input_error {
+  border-color: rgba(239, 68, 68, 0.7);
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12);
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.error {
+  color: #991b1b;
+  font-size: 12px;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.55);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 50;
+}
+
+.modalPanel {
+  width: min(680px, 100%);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  box-shadow: 0 22px 60px rgba(2, 6, 23, 0.35);
+  overflow: hidden;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 14px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.08), rgba(255, 255, 255, 0.0));
+}
+
+.modalTitle {
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.iconBtn {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.iconBtn:hover {
+  background: rgba(2, 6, 23, 0.03);
+}
+
+.modalBody {
+  padding: 14px;
+}
+
+.modalFooter {
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  background: rgba(2, 6, 23, 0.02);
+}
+
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: min(520px, calc(100% - 32px));
+  border-radius: 16px;
+  padding: 12px 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 18px 50px rgba(2, 6, 23, 0.2);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 80;
+}
+
+.toast_info {
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+.toast_success {
+  border-color: rgba(6, 182, 212, 0.35);
+}
+
+.toast_error {
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.toastMsg {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.toastClose {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

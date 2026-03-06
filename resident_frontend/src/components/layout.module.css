@@ -1,0 +1,125 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  background: rgba(249, 250, 251, 0.75);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-width: 260px;
+}
+
+.brandMark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 1), rgba(6, 182, 212, 1));
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.25);
+}
+
+.brandTitle {
+  font-weight: 760;
+  letter-spacing: -0.02em;
+}
+
+.brandSub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.navLink,
+.navActive {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.navActive {
+  color: var(--text);
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.apiHint {
+  display: none;
+  color: var(--muted);
+  font-size: 12px;
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.code {
+  color: var(--text);
+  background: rgba(2, 6, 23, 0.04);
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.main {
+  flex: 1;
+  width: min(1100px, calc(100% - 32px));
+  margin: 18px auto 28px;
+}
+
+.footer {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(100, 116, 139, 0.5);
+}
+
+@media (min-width: 920px) {
+  .apiHint {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
